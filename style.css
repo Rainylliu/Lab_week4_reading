@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, rgb(169, 243, 254), rgb(211, 148, 253));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#title {
+    text-align: center;
+    margin-top: 15px;
+    color: #5815a5;
+    margin-bottom: -50px;
+    font-size: large;
+    font-family: 'Charm', cursive;
+}
+.card-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card_1 {
+    width: 500px;
+    height: 700px;
+    position: relative;
+}
+.card_2 {
+    width: 500px;
+    height: 700px;
+    position: relative;
+}
+.cover_1,
+.back_1 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(136, 134, 246, 0.5);
+    width: 380px;
+    height: 585px; 
+    font-size: large;
+    color: #fff;
+    text-align: justify;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Charm', cursive;
+}
+.cover_2,
+.back_2 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(136, 134, 246, 0.5);
+    width: 380px;
+    height: 515px;
+    color: #fff;
+    font-size:larger;
+    text-align: justify;
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Charm', cursive;
+}
+.cover_1 {
+    background-image: url(.//img/bulb.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.cover_2 {
+    background-image: url(.//img/book.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.back_1 {
+    background-image: linear-gradient(to bottom right, rgb(172, 169, 254), rgb(253, 148, 216));
+    transform: rotateY(-180deg);
+}
+.back_2 {
+    background-image: linear-gradient(to bottom right, rgb(172, 169, 254), rgb(253, 148, 216));
+    transform: rotateY(-180deg);
+}
+.card_1:hover .cover_1{
+    transform: rotateY(180deg);
+}
+.card_2:hover .cover_2{
+    transform: rotateY(180deg);
+}
+.card_1:hover .back_1{
+    transform: rotateY(0deg);
+}
+.card_2:hover .back_2{
+    transform: rotateY(0deg);
+} 
